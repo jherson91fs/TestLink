@@ -7,7 +7,7 @@ definer_user=root
 definer_host=%
 suid=2
 with_check_option=0
-timestamp=2025-04-08 22:15:31
+timestamp=2025-04-08 22:34:39
 create-version=1
 source=SELECT RSR.parent_id AS req_spec_id, RS.testproject_id AS testproject_id,\nMAX(RSR.revision) AS revision \nFROM /*prefix*/req_specs_revisions RSR \nJOIN /*prefix*/req_specs RS \nON RS.id = RSR.parent_id\nGROUP BY RSR.parent_id,RS.testproject_id
 client_cs_name=latin1

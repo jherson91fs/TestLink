@@ -7,7 +7,7 @@ definer_user=root
 definer_host=%
 suid=2
 with_check_option=0
-timestamp=2025-04-08 22:15:31
+timestamp=2025-04-08 22:34:39
 create-version=1
 source=SELECT RQ.id AS req_id,max(RQV.version) AS version \nFROM /*prefix*/nodes_hierarchy NHRQV \nJOIN /*prefix*/requirements RQ \nON RQ.id = NHRQV.parent_id \nJOIN /*prefix*/req_versions RQV \nON RQV.id = NHRQV.id\nGROUP BY RQ.id
 client_cs_name=latin1

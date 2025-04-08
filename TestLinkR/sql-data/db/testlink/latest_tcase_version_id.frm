@@ -7,7 +7,7 @@ definer_user=root
 definer_host=%
 suid=2
 with_check_option=0
-timestamp=2025-04-08 22:15:31
+timestamp=2025-04-08 22:34:39
 create-version=1
 source=SELECT\n   LTCVN.testcase_id AS testcase_id,\n   LTCVN.version AS version,\n   TCV.id AS tcversion_id\nFROM /*prefix*/latest_tcase_version_number LTCVN \njoin /*prefix*/nodes_hierarchy NHTCV \non NHTCV.parent_id = LTCVN.testcase_id \njoin /*prefix*/tcversions TCV \non TCV.id = NHTCV.id \nand TCV.version = LTCVN.version
 client_cs_name=latin1

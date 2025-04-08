@@ -7,7 +7,7 @@ definer_user=root
 definer_host=%
 suid=2
 with_check_option=0
-timestamp=2025-04-08 22:15:31
+timestamp=2025-04-08 22:34:39
 create-version=1
 source=SELECT NH_TC.id AS testcase_id,max(TCV.version) AS version \nFROM /*prefix*/nodes_hierarchy NH_TC \nJOIN /*prefix*/nodes_hierarchy NH_TCV \nON NH_TCV.parent_id = NH_TC.id\nJOIN /*prefix*/tcversions TCV \nON NH_TCV.id = TCV.id \nGROUP BY testcase_id
 client_cs_name=latin1

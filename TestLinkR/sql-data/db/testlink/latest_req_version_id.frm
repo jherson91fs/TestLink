@@ -7,7 +7,7 @@ definer_user=root
 definer_host=%
 suid=2
 with_check_option=0
-timestamp=2025-04-08 22:15:31
+timestamp=2025-04-08 22:34:39
 create-version=1
 source=SELECT\n   LRQVN.req_id AS req_id,\n   LRQVN.version AS version,\n   REQV.id AS req_version_id\nFROM latest_req_version LRQVN \nJOIN /*prefix*/nodes_hierarchy NHRQV\nON NHRQV.parent_id = LRQVN.req_id \nJOIN /*prefix*/req_versions REQV \nON REQV.id = NHRQV.id AND REQV.version = LRQVN.version
 client_cs_name=latin1
